@@ -1,15 +1,10 @@
-*{
-  font-family: "Gabarito", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+* {
+    font-family: "Gabarito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
-body{
-    margin: 20px;
-}
-
-.Main-Header{
+.Main-Header {
     display: flex;
     color: #BE32F5;
     justify-content: space-between;
@@ -17,37 +12,41 @@ body{
     border-bottom: 1px black solid;
 }
 
-.header-2 input{
+.header-2 input {
     border-radius: 40px;
     padding: 10px;
     width: 900px;
 }
 
-.header-2 input:focus{
+.header-2 input:focus {
     outline: none;
 }
 
-.header-3{
+.header-3 {
     align-items: center;
     display: flex;
     gap: 20px;
 }
 
-.header-3 a{
+.header-3 a {
     text-decoration: none;
     color: #BE32F5;
 }
 
-.header-3 a:hover{
+.header-3 a:hover {
     color: #be32f5bd;
 }
 
-.header-3 img{
+.header-3 img {
     width: 25px;
     height: 25px;
 }
 
-.courses{
+.navbar__s4 {
+    display: none;
+}
+
+.courses {
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -55,42 +54,45 @@ body{
     margin-left: 30px;
 }
 
-.courses p{
+.courses p {
     border: 2px black solid;
     border-radius: 40px;
     padding: 15px;
-    background-color: #BE32F5;;
+    background-color: #BE32F5;
+    ;
     color: white;
 }
 
-.courses p:hover{
+.courses p:hover {
     color: black;
     background-color: white;
     cursor: pointer;
 }
 
-.main-content{
+.main-content {
     display: flex;
 }
 
-.sub-content{
+.sub-content {
     margin-top: 100px;
 }
 
-.sub-content-1{
-    margin-left:250px;
-    width: 100%;
+.sub-content-1 {
+    margin-left: 60%;
+    width: 120%;
     padding: 35px;
     box-shadow: 0 4px 20px rgb(0, 0, 0, 0.08);
 }
 
-.sub-content-1 h1{
+.sub-content-1 h1 {
     color: black;
 }
-.sub-content-1 p{
+
+.sub-content-1 p {
     font-size: 20px;
 }
-.sub-content-2{
+
+.sub-content-2 {
     width: 150%;
     border: 2px solid black;
     margin-top: 90px;
@@ -99,103 +101,109 @@ body{
     padding: 30px
 }
 
-.sub-content-2 h2{
+.sub-content-2 h2 {
     margin-left: 10px;
 }
-.sub-content-2 p{
+
+.sub-content-2 p {
     margin-left: 10px;
     font-size: 15px;
 }
 
-.main-content-image{
+.main-content-image {
     width: 100%;
     margin-left: 570px;
 }
 
-.heading h1{
+.heading h1 {
     margin-bottom: 0;
     color: black;
 }
-.heading p{
+
+.heading p {
     margin-top: 0;
     font-size: 20px;
 }
 
-.image div img{
+.image div img {
     width: 100%;
     margin-bottom: 0;
 }
 
-.image div img:hover{
+.image div img:hover {
     cursor: pointer;
     filter: brightness(80%);
 }
 
-.image div div h3{
+.image div div h3 {
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.image div div p{
+.image div div p {
     margin-top: 0;
     font-size: 18px;
 }
 
-.image{
+.image {
     display: flex;
     justify-content: space-between;
     margin-bottom: 150px;
 }
 
-.Topics{
+.Topics {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    gap: 15px;
+    width: 100%;
 }
-.Topics h3{
+
+.Topics h3 {
     padding: 12px;
     border: 1px solid black;
     width: 31%;
-    margin-bottom: 2px;
-    margin-top: 2px;
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
 }
 
-.Topics h3:hover{
+.Topics h3:hover {
     background-color: #BE32F5;
     cursor: pointer;
 }
 
-.heading-1 h1{
+.heading-1 h1 {
     margin-top: 90px;
     margin-bottom: 0;
     color: black;
 }
-.heading-1 p{
+
+.heading-1 p {
     margin-top: 5px;
     font-size: 20px;
 }
 
-.footer{
+.footer {
     background-color: black;
 }
 
-.footer-main{
+.footer-main {
     display: flex;
 }
 
-.footer-1{
+.footer-1 {
     margin-top: 35px;
     color: white;
     margin-left: 30px;
     margin-right: 50px;
 }
 
-.footer-3{
+.footer-3 {
     margin-top: 35px;
     color: white;
 }
 
-.footer-2{
+.footer-2 {
     color: white;
     margin-left: 30px;
     margin-right: 30px;
@@ -203,4 +211,74 @@ body{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 0;
+}
+
+@media screen and (max-width:600px) {
+    .navbar__s4 {
+        display: block;
+    }
+
+    .header-2 {
+        display: none;
+    }
+
+    .header-3 {
+        display: none;
+    }
+
+    .courses {
+        display: flex;
+        padding: 5px;
+    }
+
+    .courses p {
+        border: 1px black solid;
+        border-radius: 20px;
+        padding: 5px;
+        background-color: #BE32F5;
+        color: white;
+        font-size: 9px;
+    }
+
+    .sub-content-1 {
+        margin: 0 auto;
+        margin-top: -40px;
+        align-self: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .sub-content-1 h1 {
+        color: black;
+        font-size: 25px;
+    }
+
+    .sub-content-1 p {
+        font-size: 15px;
+    }
+
+    .sub-content-2 {
+        display: none;
+    }
+
+    .main-content-image {
+        display: none;
+    }
+
+    .heading {
+        text-align: center;
+    }
+
+    .image {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .heading-1 {
+        text-align: center;
+    }
 }
